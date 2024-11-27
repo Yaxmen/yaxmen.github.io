@@ -67,6 +67,10 @@ body {
 }
 
 .social-icons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -114,7 +118,7 @@ body {
 }
 
 .projects a:hover {
-    color: #f5f5f5;
+    color: #97979749;
 }
 
 /* Rodapé */
