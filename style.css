@@ -1,3 +1,4 @@
+/* Estilos Globais */
 * {
     margin: 0;
     padding: 0;
@@ -5,46 +6,63 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #3498db, #2ecc71);
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.split-screen {
-    display: flex;
-    width: 80%;
-    height: 90vh;
-    background-color: #fff;
+/* Container Principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
     border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.info, .projects {
-    width: 50%;
-    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.info {
-    background-color: #000;
+/* Cabeçalho */
+.header {
+    background: #2c3e50;
     color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Conteúdo Principal */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Informações Pessoais */
+.info {
+    flex: 1 1 50%;
+    padding: 20px;
     text-align: center;
 }
 
-.info h1 {
-    font-size: 3rem;
-}
-
 .info p {
-    margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 1.1rem;
 }
 
@@ -53,47 +71,57 @@ body {
 }
 
 .social-icons a {
-    color: #fff;
+    color: #2c3e50;
     font-size: 1.8rem;
     margin: 0 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
     color: #3498db;
+    transform: scale(1.1);
 }
 
+/* Projetos */
 .projects {
-    background-color: #f4f4f4;
-    text-align: center;
+    flex: 1 1 50%;
+    padding: 20px;
 }
 
 .projects h2 {
-    font-size: 2rem;
-    color: #3498db;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .projects ul {
-    list-style-type: none;
-    font-size: 1.1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.projects ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .projects a {
     color: #3498db;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .projects a:hover {
-    text-decoration: underline;
+    color: #2ecc71;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #000;
+/* Rodapé */
+.footer {
+    background: #2c3e50;
     color: #fff;
-    padding: 10px 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
 }
